@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Cart 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+ 
+  <ion-item>
+    <ion-label position="floating">Name</ion-label>
+    <ion-input type="text" [(ngModel)]="food.name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Discription</ion-label>
+    <ion-input type="text" [(ngModel)]="food.discription"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Price</ion-label>
+    <ion-input type="number" [(ngModel)]="food.price"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" color="primary" (click)="submit()">Submit</ion-button>
+
+  <ion-button expand="full" color="dark" (click)="details()">Details</ion-button>
+
+ 
+
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start">
+      <ion-back-button fill="clear"></ion-back-button>
+    </ion-button>
+    <ion-title>details</ion-title>
+
+    <ion-button slot="end">
+      <ion-button fill="clear">
+        <ion-icon name="notifications"></ion-icon>
+        <ion-badge>{{count}}</ion-badge>
+      </ion-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div *ngIf="CartList.length > 0">
+
+    <div *ngFor="let cart of CartList">
+
+     {{food.name}}, {{food.discription}}, {{food.price}};
+
+    </div>
+
+  </div>
+
+</ion-content>
